@@ -88,15 +88,18 @@ hr {
 }
 #upContent > h1 {
   color: white;
-  font-weight: 400;
+  font-weight: bold;
   font-family: sans-serif;
+  height: 5vh;
+  margin: 5vh 0 1vh;
 }
 #upContent > h2 {
   color: white;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 2.3vh;
-  margin-bottom: 3.2vh;
+  height: 3vh;
+  margin-bottom: 0;
 }
 #upContent > h3 {
   color: white;
@@ -104,17 +107,20 @@ hr {
   font-family: sans-serif;
   font-size: 2vh;
 }
-
 #upContent {
   width: 100%;
   margin: 0 3vw 0 3vw;
-  height: 34vh;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 #menuSection {
   margin-bottom: 1vh;
   display: flex;
   flex-direction: row;
-  color: white;
+  height: 6vh;color: white;
   align-items: center;
   align-content: center;
 }
@@ -123,6 +129,12 @@ hr {
   margin-right: 3vh;
   height: 2.5vh;
 }
+.video{
+  width: 100vw;
+    margin: 0 0 0 -3vw;
+    /* transform: scaleY(1.2); */
+}
+
 .disable-selection {
   -webkit-touch-callout: none; /* iOS Safari                           */
     -webkit-user-select: none; /* Safari                               */
