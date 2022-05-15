@@ -38,6 +38,9 @@ body {
   font-family: sans-serif;
   color: #4c4c4c;
 }
+.element :last-child {
+  flex-direction: row-reverse;
+}
 
 hr {
   color: gray;
