@@ -1,4 +1,4 @@
-html{
+html {
   overflow-x: hidden;
 }
 body {
@@ -11,8 +11,8 @@ body {
 }
 #content {
   background-color: #f5f5f5;
-    width: 100vw;
-    height: 85vh;
+  width: 100vw;
+  height: 85vh;
 }
 #incontent {
   background-color: white;
@@ -117,13 +117,13 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 #menuSection {
   margin: 1vh 0 1vh;
   display: flex;
   flex-direction: row;
-  height: 6vh;color: white;
+  height: 6vh;
+  color: white;
   align-items: center;
   align-content: center;
 }
@@ -132,16 +132,47 @@ hr {
   margin-right: 3vh;
   height: 2.5vh;
 }
-.video{
+.video {
   width: 140vw;
-    margin: 0 0 0 -3vw;
-    transform: scaleY(1.2);
+  margin: 0 0 0 -3vw;
+  transform: scaleY(1.2);
 }
 
 .disable-selection {
   -webkit-touch-callout: none; /* iOS Safari                           */
-    -webkit-user-select: none; /* Safari                               */
-     -khtml-user-select: none; /* Konqueror HTML                       */
-       -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
-        -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
-            user-select: none; /* Aktualnie wspierane przez:           */
+  -webkit-user-select: none; /* Safari                               */
+  -khtml-user-select: none; /* Konqueror HTML                       */
+  -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
+  -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
+  user-select: none; /* Aktualnie wspierane przez:           */
+}
+#qr {
+  width: 100vw;
+  z-index: 10000;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+#qr > button {
+  margin-top: 3vh;
+  background-color: transparent;
+  border-radius: 3vh;
+  width: 50%;
+  height: 4vh;
+  font-weight: bold;
+  color: #6e6e6e;
+  border: 2px #dddddd solid;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#qrPhoto {
+  height: 70vw;
+  width: 70vw;
+  margin-top: 4vh;
+}
