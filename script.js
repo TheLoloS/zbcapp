@@ -1,5 +1,16 @@
+let fDate = document.querySelector("#fDate");
+let showQRBtn = document.querySelector("#upBtn");
+let hideQRBtn = document.querySelector("#qr > button");
+let busNum = document.querySelector("#busNum");
+
 window.addEventListener("load", function () {
   window.history.pushState({ noBackExitsApp: true }, "");
+  localStorage.getItem("newDate")
+    ? (fDate.innerHTML = localStorage.getItem("newDate"))
+    : null;
+  localStorage.getItem("numberBus")
+    ? (busNum.innerHTML = localStorage.getItem("numberBus"))
+    : null;
 });
 
 window.addEventListener("popstate", function (event) {
@@ -7,10 +18,6 @@ window.addEventListener("popstate", function (event) {
     window.history.pushState({ noBackExitsApp: true }, "");
   }
 });
-let showQRBtn = document.querySelector("#upBtn");
-let hideQRBtn = document.querySelector("#qr > button");
-let fDate = document.querySelector("#fDate");
-let busNum = document.querySelector("#busNum");
 
 showQRBtn.addEventListener("click", () => {
   document.getElementById("qr").style.display = "flex";
@@ -27,6 +34,12 @@ fDate.addEventListener("click", () => {
     fDate.innerHTML = `${d.toLocaleDateString(
       "fr-CH"
     )}&nbsp;godz.&nbsp;${d.toLocaleTimeString()}`;
+    localStorage.setItem(
+      "newDate",
+      `${d.toLocaleDateString(
+        "fr-CH"
+      )}&nbsp;godz.&nbsp;${d.toLocaleTimeString()}`
+    );
   } else {
     //some code
   }
@@ -36,6 +49,7 @@ busNum.addEventListener("click", () => {
   let promptAnswer = window.prompt("Wpisz numer autobusu:");
   if (promptAnswer) {
     busNum.innerHTML = promptAnswer;
+    localStorage.setItem("numberBus", promptAnswer);
   } else {
     console.log("nie działa");
   }
