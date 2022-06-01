@@ -40,8 +40,10 @@
         </h3>
       </div>
       <h1 class="disable-selection">Normalny</h1>
-      <h2 class="disable-selection">JEDNORAZOWY 4 - 7 PRZYSTANKÓW</h2>
-      <h2 class="disable-selection" style="margin-bottom: 3vh">
+      <h2 class="disable-selection" id="countB">
+        JEDNORAZOWY 4 - 7 PRZYSTANKÓW
+      </h2>
+      <h2 class="disable-selection" id="countC" style="margin-bottom: 3vh">
         MZK JASTRZĘBIE-ZDRÓJ
       </h2>
       <video
@@ -77,7 +79,25 @@
         <hr />
         <div class="element disable-selection">
           <div>Cena</div>
-          <div>4,00&nbspzł</div>
+          <div>
+            <select class="form-control">
+              <option>Wybierz</option>
+              <optgroup label="Normalny">
+                <option value="0">2,00&nbspzł</option>
+                <option value="1">4,00&nbspzł</option>
+                <option value="2">5,00&nbspzł</option>
+                <option value="3">6,00&nbspzł</option>
+                <option value="4">7,00&nbspzł</option>
+              </optgroup>
+              <optgroup label="ulgowy">
+                <option value="5">1,00&nbspzł</option>
+                <option value="6">2,00&nbspzł</option>
+                <option value="7">2,50&nbspzł</option>
+                <option value="8">3,00&nbspzł</option>
+                <option value="9">3,50&nbspzł</option>
+              </optgroup>
+            </select>
+          </div>
         </div>
       </div>
       <div id="downContent">
@@ -112,6 +132,7 @@
             margin-bottom: 0;
           "
           class="disable-selection"
+          id="fotterText"
         >
           &nbsp; Bilet jednorazowy, na przejazd od 4 do 7 przystanków,
           autobusemy wybranej linii. Ważny od momentu zakupu. <br />

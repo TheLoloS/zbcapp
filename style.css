@@ -179,3 +179,19 @@ hr {
   width: 70vw;
   margin-top: 4vh;
 }
+.form-control {
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+  border: 0;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 2vh;
+  color: #4c4c4c;
+  text-align: end;
+}
+select::-ms-expand {
+  display: none;
+}
