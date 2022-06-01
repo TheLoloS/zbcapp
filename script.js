@@ -171,3 +171,5 @@ autobusemy wybranej linii. Ważny od momentu zakupu. <br />
 Nie uprawnia do przesiadek.`,
   },
 ];
+let idTicket = document.querySelector("#idTicket");
+idTicket.innerHTML += String(Math.floor(Math.random() * 100000000000));
