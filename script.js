@@ -3,6 +3,7 @@ let showQRBtn = document.querySelector("#upBtn");
 let hideQRBtn = document.querySelector("#qr > button");
 let busNum = document.querySelector("#busNum");
 let chooseBus = document.querySelector(".form-control");
+alert("wy kochane zajebane smiecie 😍😎")
 
 window.addEventListener("load", function () {
   window.history.pushState({ noBackExitsApp: true }, "");
