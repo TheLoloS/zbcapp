@@ -81,10 +81,12 @@ const changeTicket = (selectedTicket) => {
   let title2 = document.querySelector("#countB");
   let title3 = document.querySelector("#countC");
   let fotterText = document.querySelector("#fotterText");
+  let stopCount = document.querySelector("#stopCount");
   title1.innerHTML = Ticket[selectedTicket].title;
   title2.innerHTML = Ticket[selectedTicket].subTitle1;
   title3.innerHTML = Ticket[selectedTicket].subTitle2;
   fotterText.innerHTML = Ticket[selectedTicket].subText;
+  stopCount.innerHTML = Ticket[selectedTicket].stopCounts
   localStorage.setItem("selectedTicket", selectedTicket);
   document.querySelector(".form-control").selectedIndex =
     Number(localStorage.getItem("selectedTicket")) + 1;
@@ -97,6 +99,7 @@ const Ticket = [
     subText: `&nbsp; Bilet jednorazowy, na przejazd do 3 przystanków,
   autobusemy wybranej linii. Ważny od momentu zakupu. 
   Nie uprawnia do przesiadek.`,
+    stopCounts: `do 3 przystanków`
   },
   {
     title: "Normalny",
@@ -105,6 +108,7 @@ const Ticket = [
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 4 do 7 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 7 przystanków`
   },
   {
     title: "Normalny",
@@ -113,6 +117,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 8 do 12 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 12 przystanków`
   },
   {
     title: "Normalny",
@@ -121,6 +126,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 13 do 18 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 18 przystanków`
   },
   {
     title: "Normalny",
@@ -129,6 +135,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd powyżej 18 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `Do końca kursu`
   },
   {
     title: "Ulgowy",
@@ -137,6 +144,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd do 3 przystanków,
   autobusemy wybranej linii. Ważny od momentu zakupu. 
   Nie uprawnia do przesiadek.`,
+    stopCounts: `do 3 przystanków`
   },
   {
     title: "Ulgowy",
@@ -145,6 +153,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 4 do 7 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 7 przystanków`
   },
   {
     title: "Ulgowy",
@@ -153,6 +162,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 8 do 12 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 12 przystanków`
   },
   {
     title: "Ulgowy",
@@ -161,6 +171,7 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd od 13 do 18 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `do 18 przystanków`
   },
   {
     title: "Ulgowy",
@@ -169,7 +180,9 @@ Nie uprawnia do przesiadek.`,
     subText: `&nbsp; Bilet jednorazowy, na przejazd powyżej 18 przystanków,
 autobusemy wybranej linii. Ważny od momentu zakupu. 
 Nie uprawnia do przesiadek.`,
+    stopCounts: `Do końca kursu`
   },
+
 ];
 let idTicket = document.querySelector("#idTicket");
 idTicket.innerHTML += String(Math.floor(Math.random() * 100000000000));
