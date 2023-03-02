@@ -3,10 +3,10 @@ let showQRBtn = document.querySelector("#upBtn");
 let hideQRBtn = document.querySelector("#qr > button");
 let busNum = document.querySelector("#busNum");
 let chooseBus = document.querySelector(".form-control");
-alert("Hej ✋ taka mała sprawa ❗. Za każdym razem gdy coś aktualizuje, muszę wydawać po 20 / 30 zł na bilety dla testów. Jak komuś się chce, można jakieś dotacje blikiem strzelić. Dla przypominania bilet miesięczny ulgowy to 82 zł 😎 a tez nie chce być w plecy za każdym razem gdy coś naprawiam, a przecież tyle ludzi z tego korzysta. (każdy grosik sie liczy) Miłego Dnia! 😍😘🥰 ~ TheLoloS")
+alert("Hej ✋ taka mała sprawa ❗. Za każdym razem gdy coś aktualizuje, muszę wydawać po 20 / 30 zł na bilety dla testów. Jak komuś się chce, można jakieś dotacje blikiem strzelić. Dla przypominania bilet miesięczny ulgowy to 82 zł i działa od maja 2022 czyli 7 miesięcy 7x80=560zł oszczedności wiec 😎, a tez nie chce być w plecy za każdym razem gdy coś naprawiam, a przecież tyle ludzi z tego korzysta. (każdy grosik sie liczy) Miłego Dnia! 😍😘🥰 ~ TheLoloS")
 
 if (!localStorage.getItem("nick")) {
-  let promptNick = window.prompt("Podaj Swój nick (wymyśl jakis to tylko w celu prowadzenia statystyk)");
+  let promptNick = window.prompt("Podaj Swój nick (wymyśl jakis to tylko w celu prowadzenia statystyk i każdo razowo podawaj ten sam)");
   const data = {
     name: promptNick,
 
