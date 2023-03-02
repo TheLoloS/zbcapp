@@ -3,7 +3,7 @@ let showQRBtn = document.querySelector("#upBtn");
 let hideQRBtn = document.querySelector("#qr > button");
 let busNum = document.querySelector("#busNum");
 let chooseBus = document.querySelector(".form-control");
-alert("wy kochane zajebane smiecie 😍😎")
+alert("Hej ✋ taka mała sprawa ❗. Za każdym razem gdy coś aktualizuje, muszę wydawać po 20 / 30 zł na bilety dla testów. Jak komuś się chce, można jakieś dotacje blikiem strzelić. Dla przypominania bilet miesięczny ulgowy to 82 zł 😎 a tez nie chce być w plecy za każdym razem gdy coś naprawiam, a przecież tyle ludzi z tego korzysta. (każdy grosik sie liczy) Miłego Dnia! 😍😘🥰 ~ TheLoloS")
 
 window.addEventListener("load", function () {
   window.history.pushState({ noBackExitsApp: true }, "");
